@@ -5,8 +5,8 @@ script:
 - bash test-hello.sh
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
-    skip_cleanup: true
     secure: VDa/6Ki6s0ZLeBnD/xxoxNGyhwsdve0Owz3Z5xQTT1iHW8znlgqLCn1KNudt2shJ4YeMAEOokLDfOoLnsfNY3bsQy49V3GGD2q7eJMkwiN01z6Sxe91gWrNhann1lpWCgrs/tENgeJcB+wTTPStdGN4oqY8E40kDwKgBGFvUWE6nM4cwev94mMHqmOFnV0acX1KEWo0LjzgkGLe1Igwbcs1eOhY7KtW0tCL2xpo2UnsVBtQf+2AoVxRR+qcLY/FLLYUxqGKnR6w68xnAoS4HtkX3NSq/e+J02c1ekKaKJh6zZiNdxtF8MiIvwrhM6W2pWMDICPBI17zGmo3d11jqzIpEaG/ZAJj1r6baB3IZDAXXnzMYMnQ+hfEV2QHxVTuyKe7uQer76eVzE/Zam9CgL+WpzkkNMEDm1ZCKu36ohopiuY4Ba+GqolpZn2vEmUZjxnK1whJcvJX732cFhqsNIYeBeyRS8p9TIk+wiBOrjrTENNDzSiPIamB6pY0RiRcbO56sLf0865XKzsUXiDLgBoEElPv0PdD0vwNlooDCbLFZXJMA5IyO2flc0+phTpdP+NcS717Mnx3o1e/XYa/TotYFlVL6t0exCC9Uc2Bvlr5rNsI0GQP6FBkElZqqAPPhRKP6xVVIrEVsnljgEnxLrOTa0eTKxu9dk29jd8DOt5Y=
   file: hello.sh
   on:
