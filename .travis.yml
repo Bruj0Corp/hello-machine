@@ -3,3 +3,13 @@ dist: xenial
 sudo: required
 script:
 - bash test-hello.sh
+deploy:
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: YVD8xOAmh/zO84arbwK2aEd/cvwIl5AvugAjHwCreN1utEJXoAXUDUikV+Rg0mJa6eOuHUFBC+Fr9lVz9F5anQjlsa2TVJoeTP4NEYag+QxFFb7GjsY9h0DGtYGyfbFyzOyuXjHYguTndjs5JcgPlYNrKi7ww/Q0aPyHlTeEq53pRMW3P2X2Z9fOMq8HxseGMFWaD9oeM05HCTkTDEJl6mdItsfhj5keDCVSe8XDLnITiNTLAgRJJlS0gnGjWokVQb69484hKbQORRPfjYwDgzfXimI3/UES40iNz2aHvIZ1vNFIgvmGZxcQ3Epb3iWlZzKC0m7ihGBnpvY711T+pw/320QUIiieMmQoXbpTjFUQKxHVcwRGbr6dPBYClrtjLuiZOr8jZ3xlWTmb6TWXNUTZR5KOXAScpRVvN5UzgB2uFS1TtKD1zo81WeBPIh9RulRV92oLs1nNliTbAs6oaaimfs5KzBRsZCjm2ZsijHsPZTSmf5G0FrTlrftTTC2dIHKQbN2Gx8hCaXims2M2HpeWC8FCNI0hEDomaACf17SYrHQhLZ3WafhcbgEW5xRSl0FnKpHnQlMWA50TPuCaIBeVqQrQS8mDoQsbwiYH+FajD/v0e0+b3Xi2AVtMO1daF0BdU608tkoS7CjByfWHIbcP+SyGzBB0P3LFaFav6xE=
+  file: hello.sh
+  on:
+    repo: Bruj0Corp/hello-machine
+    tags: true
+    
