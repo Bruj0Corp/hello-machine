@@ -2,7 +2,7 @@
 test repo for cd/ci
 
 # TODO
-- [ ] add hello.sh
-- [ ] add a test for hello.sh
 
 # DONE
+- [x] add hello.sh
+- [x] add a test for hello.sh
